@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Learn how semantic HTML improves accessibility, search visibility, and maintainability."
+    >
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Why Semantic HTML Matters">
+    <meta
+      property="og:description"
+      content="A practical introduction to semantic HTML and accessible page structure."
+    >
+    <meta property="og:locale" content="en_US">
+    <title>Why Semantic HTML Matters | HTML Basics</title>
+    <link rel="canonical" href="https://example.com/semantic-html">
+    <style>
+      body {
+        max-width: 48rem;
+        margin: 0 auto;
+        padding: 1rem;
+        color: #202124;
+        font: 1rem/1.6 system-ui, sans-serif;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        color: #0759a5;
+      }
+
+      :focus-visible {
+        outline: 3px solid #b54708;
+        outline-offset: 3px;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Why Semantic HTML Matters",
+        "description": "A practical introduction to semantic HTML and accessible page structure.",
+        "inLanguage": "en"
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#main-content">Skip to main content</a>
+    <header>
+      <p>HTML Basics</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <article>
+        <header>
+          <h1>Why Semantic HTML Matters</h1>
+          <p>
+            By <span>HTML Basics Team</span> ·
+            <time datetime="2026-10-11">October 11, 2026</time>
+          </p>
+          <p>
+            Semantic HTML gives content meaning. It helps browsers, assistive
+            technologies, and search engines understand how a page is organized.
+          </p>
+        </header>
+
+        <section id="benefits" aria-labelledby="benefits-heading">
+          <h2 id="benefits-heading">The benefits of semantic HTML</h2>
+          <p>
+            Elements such as <code>&lt;main&gt;</code>,
+            <code>&lt;nav&gt;</code>, and <code>&lt;article&gt;</code> describe
+            the purpose of their content instead of just how it looks.
+          </p>
+          <ul>
+            <li>Assistive technology can navigate page landmarks.</li>
+            <li>Search engines can better interpret the page structure.</li>
+            <li>Other developers can understand and maintain the markup.</li>
+          </ul>
+        </section>
+
+        <section id="examples" aria-labelledby="examples-heading">
+          <h2 id="examples-heading">Choose elements by meaning</h2>
+          <p>
+            Use a heading for a heading, a button for an action, and a link for
+            navigation. Native HTML behavior is often more accessible and
+            reliable than recreating it with generic elements.
+          </p>
+          <figure>
+            <pre><code>&lt;button type="button"&gt;Save changes&lt;/button&gt;</code></pre>
+            <figcaption>A native button communicates that this control performs an action.</figcaption>
+          </figure>
+        </section>
+
+        <section id="resources" aria-labelledby="resources-heading">
+          <h2 id="resources-heading">Learn more</h2>
+          <p>
+            Read the
+            <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">
+              MDN guide to HTML semantics
+            </a>
+            for more details.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 HTML Basics. Built with semantic HTML.</p>
+    </footer>
+  </body>
+</html>
